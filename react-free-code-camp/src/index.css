@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-WorkSans italic tracking-wider bg-react text-react;
+}
+
+section {
+  @apply bg-white border-4 border-dark rounded-xl overflow-hidden my-2;
+}
+
+section > div {
+  @apply bg-dark p-2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold p-2 text-dark bg-cyan-500;
+}
+
+h2 {
+  @apply text-2xl text-center;
+}
+
+h3 {
+  @apply text-xl text-center;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+header,
+footer {
+  @apply border-4 border-dark rounded-sm text-center;
+}
