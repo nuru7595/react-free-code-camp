@@ -1,9 +1,11 @@
+import src from '../../assets/favicon.ico'
+
 export default function FunFacts() {
     return (
         <div>
             <h3 className="bg-transparent text-react text-left flex items-center">
                 <img
-                    src="./src/assets/favicon.ico"
+                    src={src}
                     alt="React logo"
                     width="40px"
                     className="mr-4"
