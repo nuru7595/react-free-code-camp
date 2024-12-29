@@ -33,6 +33,10 @@ h6 {
   @apply font-bold p-2 text-dark bg-cyan-500;
 }
 
+h1 {
+  @apply text-2xl text-center;
+}
+
 h2 {
   @apply text-2xl text-center;
 }
@@ -48,4 +52,8 @@ h4 {
 header,
 footer {
   @apply border-4 border-dark rounded-sm text-center;
+}
+
+.logo {
+  width: 55px;
 }

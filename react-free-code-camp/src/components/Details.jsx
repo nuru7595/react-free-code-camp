@@ -9,7 +9,7 @@ export default function Details() {
                 <p>
                     Status: <span className="font-bold">Active Now</span>
                 </p>
-                <p>Allocated Time: <span className="font-bold">~4 Hours</span></p>
+                <p>Allocated Time: <span className="font-bold">~5 Hours</span></p>
                 <p>
                     Source:{" "}
                     <a
