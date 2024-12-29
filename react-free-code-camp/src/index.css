@@ -16,6 +16,14 @@ section > div {
   @apply bg-dark p-2;
 }
 
+p {
+  @apply py-2;
+}
+
+hr {
+  @apply h-1 bg-black border-t-2 border-white;
+}
+
 h1,
 h2,
 h3,

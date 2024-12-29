@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Details from "./components/Details.jsx";
 import Loader from "./components/Loader.jsx";
 import ReactFacts from "./Section 1/ReactFacts.jsx";
+import TravelJournal from "./Section 2/TravelJournal.jsx";
 
 export default function App() {
     // Selector...
@@ -33,6 +34,7 @@ export default function App() {
                     <>
                         {active === "Details" && <Details />}
                         {active === "Sec1" && <ReactFacts />}
+                        {active === "Sec2" && <TravelJournal />}
                     </>
                 )}
             </main>
