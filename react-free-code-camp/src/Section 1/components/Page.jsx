@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 export default function Page() {
     return (
-        <div>
+        <div className='black-box p-2'>
             <Header />
             <Main />
             <Footer />

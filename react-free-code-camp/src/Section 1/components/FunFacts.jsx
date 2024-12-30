@@ -2,8 +2,8 @@ import src from '../../assets/favicon.ico'
 
 export default function FunFacts() {
     return (
-        <div>
-            <h3 className="bg-transparent text-react text-left flex items-center">
+        <div className='black-box'>
+            <h3 className="flex items-center">
                 <img
                     src={src}
                     alt="React logo"
@@ -12,8 +12,8 @@ export default function FunFacts() {
                 />
                 Fun Facts About React Js
             </h3>
-            <div className="bg-slate-700 p-5 rounded-sm">
-                <ul className="list-disc list-inside">
+            <div className="slate-box">
+                <ul>
                     <li>Was first released in 2013.</li>
                     <li>Was originally created by Jordan Walke.</li>
                     <li>Has well over 100k stars on GitHub.</li>

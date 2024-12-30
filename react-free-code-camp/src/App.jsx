@@ -9,7 +9,7 @@ import TravelJournal from "./Section 2/TravelJournal.jsx";
 
 export default function App() {
     // Selector...
-    const [active, setActive] = useState("Details");
+    const [active, setActive] = useState("Sec2");
     const myFunc = (x) => {
         setActive(x);
         setLoading(true);

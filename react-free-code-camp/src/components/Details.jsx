@@ -1,15 +1,16 @@
 export default function Details() {
     return (
         <section>
-            <h3>Information</h3>
-            <div>
+            <h3 className="title">Information</h3>
+            <div className="black-box">
                 <p>
-                    Started: <span className="font-bold">29 December 2024</span>
+                    Started: <span>29 December 2024</span>
                 </p>
+                <p>Last Updated: <span>30 December 2024</span></p>
+                <p>Allocated Time: <span>~ 7 Hours</span></p>
                 <p>
-                    Status: <span className="font-bold">Active Now</span>
+                    Status: <span>Active Now</span>
                 </p>
-                <p>Allocated Time: <span className="font-bold">~5 Hours</span></p>
                 <p>
                     Source:{" "}
                     <a
