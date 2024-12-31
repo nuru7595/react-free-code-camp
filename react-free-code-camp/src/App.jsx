@@ -1,15 +1,16 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Selector from "./components/Selector.jsx";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Selector from "./components/Selector";
 import { useEffect, useState } from "react";
-import Details from "./components/Details.jsx";
-import Loader from "./components/Loader.jsx";
-import ReactFacts from "./Section 1/ReactFacts.jsx";
-import TravelJournal from "./Section 2/TravelJournal.jsx";
+import Details from "./components/Details";
+import Loader from "./components/Loader";
+import ReactFacts from "./Section 1/ReactFacts";
+import TravelJournal from "./Section 2/TravelJournal";
+import ReactState from "./Section 3/ReactState";
 
 export default function App() {
     // Selector...
-    const [active, setActive] = useState("Sec2");
+    const [active, setActive] = useState("Sec3");
     const myFunc = (x) => {
         setActive(x);
         setLoading(true);
@@ -35,6 +36,7 @@ export default function App() {
                         {active === "Details" && <Details />}
                         {active === "Sec1" && <ReactFacts />}
                         {active === "Sec2" && <TravelJournal />}
+                        {active === "Sec3" && <ReactState />}
                     </>
                 )}
             </main>

@@ -6,8 +6,14 @@ import PopQuiz from "./components/PopQuiz";
 import Jokes from "./components/Jokes";
 import MapFunc from "./components/MapFunc";
 import Arrays from "./components/Arrays";
+import MapQuiz from "./components/MapQuiz";
+import data from "./components/Data";
 
 export default function App() {
+    const entryComponents = data.map((x) => {
+        return <Entry key={x.id} {...x} />;
+    });
+
     return (
         <>
             <h3 className="title">
@@ -15,20 +21,10 @@ export default function App() {
             </h3>
             <hr />
             <hr />
-            <h4>Challenge: 1, 2, 12</h4>
+            <h4>Challenge: 1, 2, 12, 19, 20</h4>
             <div>
                 <Header />
-                <Entry
-                    img={{
-                        src: "https://scrimba.com/links/travel-journal-japan-image-url",
-                        alt: "Mount Fuji"
-                    }}
-                    title="Mount Fuji"
-                    country="Japan"
-                    googleMapsLink="https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu"
-                    dates="12 Jan, 2021 - 24 Jan, 2021"
-                    text="Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
-                />
+                {entryComponents}
             </div>
             <hr />
             <hr />
@@ -57,15 +53,7 @@ export default function App() {
             <hr />
             <hr />
             <h4>Challenge: 18 - Map Quiz</h4>
-            <div className="black-box">
-                <h2>Coming Soon . . .</h2>
-            </div>
-            <hr />
-            <hr />
-            <h4>Challenge: 19</h4>
-            <div className="black-box">
-                <h2>Coming Soon . . .</h2>
-            </div>
+            <MapQuiz />
         </>
     );
 }
