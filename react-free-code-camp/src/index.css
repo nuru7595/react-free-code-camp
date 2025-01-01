@@ -72,3 +72,14 @@ body > header,
 body > footer {
   @apply border-4 border-dark bg-cyan-500 rounded-sm text-center;
 }
+
+/* Section 3 - FormBasics */
+.form-basics label {
+  @apply py-1 block;
+}
+
+.form-basics input,
+.form-basics textarea,
+.form-basics select {
+  @apply px-2 py-1 rounded-md bg-slate-700;
+}

@@ -7,10 +7,10 @@ export default function Details() {
                     Started: <span>29 December 2024</span>
                 </p>
                 <p>
-                    Last Updated: <span>31 December 2024</span>
+                    Last Updated: <span>01 January 2025</span>
                 </p>
                 <p>
-                    Allocated Time: <span>17 Hours</span>
+                    Allocated Time: <span>22 Hours</span>
                 </p>
                 <p>
                     Status: <span>Active Now</span>
