@@ -8,6 +8,9 @@ import EventListener from "./components/EventListener";
 import FormBasics from "./components/FormBasics";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import MiniQuiz from "./components/MiniQuiz";
+import PassingDataAroundReact from "./components/PassingDataAroundReact";
+import SoundPad from "./components/SoundPad";
 import StatePractice from "./components/StatePractice";
 import Ternary from "./components/Ternary";
 import UseState from "./components/UseState";
@@ -20,7 +23,7 @@ export default function App() {
             </h3>
             <hr />
             <hr />
-            <h4>Challenge: 1, 4, 5, 18, 25, 34, 35, 36, 37, 38, 39</h4>
+            <h4>Challenge: 1, 4, 5, 18, 25, 34, 35, 36, 37, 38, 39, 53, 54, 56</h4>
             <Header />
             <Main />
             <hr />
@@ -33,7 +36,7 @@ export default function App() {
             <UseState />
             <hr />
             <hr />
-            <h4>Challenge: 8, 9, 10, 11</h4>
+            <h4>Challenge: 8, 9, 10, 11, 40</h4>
             <StatePractice />
             <hr />
             <hr />
@@ -49,7 +52,7 @@ export default function App() {
             <ComplexStateArrays />
             <hr />
             <hr />
-            <h4>Challenge: 19, 20, 21, 22</h4>
+            <h4>Challenge: 19, 20, 21, 22, 41</h4>
             <ComplexStateObjects />
             <hr />
             <hr />
@@ -65,8 +68,20 @@ export default function App() {
             <ConditionalRenderingPractice />
             <hr />
             <hr />
-            <h4>Challenge: 33</h4>
+            <h4>Challenge: 33 - Conditional Rendering Quiz</h4>
             <ConditionalRenderingQuiz />
+            <hr />
+            <hr />
+            <h4>Challenge: 42</h4>
+            <PassingDataAroundReact />
+            <hr />
+            <hr />
+            <h4>Challenge: 43, 44, 45, 46, 47, 48, 49, 50, 51, 52</h4>
+            <SoundPad />
+            <hr />
+            <hr />
+            <h4>Challenge: 55 - Mini-Quiz</h4>
+            <MiniQuiz />
         </>
     );
 }

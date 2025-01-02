@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Count from "./Count";
 
 export default function StatePractice() {
     const [count, setCount] = useState(0);
@@ -19,9 +20,7 @@ export default function StatePractice() {
                 >
                     -
                 </button>
-                <h2 className="bg-white w-24 h-24 rounded-full flex items-center justify-center text-dark border-react border-4">
-                    {count}
-                </h2>
+                <Count number={count} />
                 <button
                     onClick={add}
                     className="bg-slate-700 w-10 h-10 rounded-full text-3xl font-extrabold select-none border-none outline-none absolute ml-24"

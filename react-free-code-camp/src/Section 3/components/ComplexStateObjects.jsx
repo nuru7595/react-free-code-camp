@@ -1,7 +1,6 @@
 import { useState } from "react";
 import avatar from "../images/user.png";
-import emptyStar from "../images/star-empty.png";
-import filledStar from "../images/star-filled.png";
+import Star from "./Star";
 
 export default function ComplexStateObjects() {
     const [contact, setContact] = useState({
@@ -24,26 +23,7 @@ export default function ComplexStateObjects() {
     return (
         <div className="slate-box flex items-center justify-center flex-col text-react">
             <img src={avatar} alt="User Profile Picture" width={"200px"} />
-            <button
-                onClick={toggleFavorite}
-                aria-pressed={contact.isFavorite}
-                aria-label={
-                    contact.isFavorite
-                        ? "Remove from favorites"
-                        : "Add to favorites"
-                }
-                className="mt-2 rounded-xl bg-white"
-            >
-                <img
-                    src={contact.isFavorite ? filledStar : emptyStar}
-                    alt={
-                        contact.isFavorite
-                            ? "Filled Star Icon"
-                            : "Empty Star Icon"
-                    }
-                    width={"50px"}
-                />
-            </button>
+            <Star isFilled={contact.isFavorite} handleClick={toggleFavorite} />
             <h2>
                 {contact.firstName} {contact.lastName}
             </h2>

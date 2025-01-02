@@ -7,10 +7,11 @@ import Loader from "./components/Loader";
 import ReactFacts from "./Section 1/ReactFacts";
 import TravelJournal from "./Section 2/TravelJournal";
 import ReactState from "./Section 3/ReactState";
+import SideEffects from "./Section 4/SideEffects";
 
 export default function App() {
     // Selector...
-    const [active, setActive] = useState("Sec3");
+    const [active, setActive] = useState("Sec4");
     const myFunc = (x) => {
         setActive(x);
         setLoading(true);
@@ -37,6 +38,7 @@ export default function App() {
                         {active === "Sec1" && <ReactFacts />}
                         {active === "Sec2" && <TravelJournal />}
                         {active === "Sec3" && <ReactState />}
+                        {active === "Sec4" && <SideEffects />}
                     </>
                 )}
             </main>
