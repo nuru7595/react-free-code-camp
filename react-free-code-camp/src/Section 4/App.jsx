@@ -1,3 +1,7 @@
+import './App.css';
+import Header from "./components/Header";
+import Main from "./components/Main";
+
 export default function App() {
     return (
         <>
@@ -6,12 +10,9 @@ export default function App() {
             </h3>
             <hr />
             <hr />
-            <h4>Challenge: 1</h4>
-            <div className="black-box p-2">
-                <h2>Loading . . .</h2>
-                <h2>Loading . . .</h2>
-                <h2>Loading . . .</h2>
-            </div>
+            <h4>Challenge: 1, 2</h4>
+            <Header />
+            <Main />
         </>
     );
 }

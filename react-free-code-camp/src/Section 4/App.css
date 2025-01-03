@@ -1,0 +1,19 @@
+.memeForm label {
+    @apply block;
+}
+.memeForm input {
+    @apply border-2 border-gray-400 rounded-lg p-2 w-full block;
+}
+.memeForm input[type="submit"] {
+    @apply bg-purple-700 border-none mt-5 text-white py-3 hover:bg-purple-600 cursor-pointer;
+}
+
+.memeShow {
+    @apply mt-10 mb-5 rounded-lg overflow-hidden relative text-white max-w-[600px] mx-auto;
+}
+.memeShow img {
+    @apply w-full;
+}
+.memeShow span {
+    @apply absolute left-0 text-center right-0 uppercase text-4xl;
+}
