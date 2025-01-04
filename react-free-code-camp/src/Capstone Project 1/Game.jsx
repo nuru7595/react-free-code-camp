@@ -1,9 +1,15 @@
+import Main from "./components/Main";
+
 export default function Game() {
     return (
         <>
-            <div className="black-box p-4">
-                <h2>Will start soon . . .</h2>
-            </div>
+            <h3 className="title">
+                Capstone Project 1: <br /> Tenzies Game
+            </h3>
+            <hr />
+            <hr />
+            <h4>Challenge: 1, 2</h4>
+            <Main />
         </>
-    )
+    );
 }
