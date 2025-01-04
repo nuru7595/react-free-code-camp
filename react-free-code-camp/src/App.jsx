@@ -8,10 +8,12 @@ import ReactFacts from "./Section 1/ReactFacts";
 import TravelJournal from "./Section 2/TravelJournal";
 import ReactState from "./Section 3/ReactState";
 import SideEffects from "./Section 4/SideEffects";
+import TenziesGame from "./Capstone Project 1/TenziesGame";
+import EndGame from "./Capstone Project 2/EndGame";
 
 export default function App() {
     // Selector...
-    const [active, setActive] = useState("Sec4");
+    const [active, setActive] = useState("Sec5");
     const myFunc = (x) => {
         setActive(x);
         setLoading(true);
@@ -39,6 +41,8 @@ export default function App() {
                         {active === "Sec2" && <TravelJournal />}
                         {active === "Sec3" && <ReactState />}
                         {active === "Sec4" && <SideEffects />}
+                        {active === "Sec5" && <TenziesGame />}
+                        {active === "Sec6" && <EndGame />}
                     </>
                 )}
             </main>

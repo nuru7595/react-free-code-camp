@@ -6,9 +6,9 @@ export default function IngredientsList(props) {
     return (
         <>
             <h2 className="px-0">Ingredients on hand:</h2>
-            <ol className="list-decimal list-inside">{items}</ol>
+            <ol className="list-decimal list-inside capitalize">{items}</ol>
             {props.ingredients.length > 3 ? (
-                <div className="flex flex-col sm:flex-row items-center justify-between bg-slate-300 px-8 py-4 rounded-md my-6">
+                <div ref={props.ref} className="flex flex-col sm:flex-row items-center justify-between bg-slate-300 px-8 py-4 rounded-md my-6">
                     <div>
                         <h2>Ready for a recipe?</h2>
                         <p>Generate a recipe from your list of ingredients.</p>

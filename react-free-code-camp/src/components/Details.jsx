@@ -2,31 +2,43 @@ export default function Details() {
     return (
         <section>
             <h3 className="title">Information</h3>
-            <div className="black-box">
-                <p>
-                    Started: <span>29 December 2024</span>
-                </p>
-                <p>
-                    Last Updated: <span>03 January 2025</span>
-                </p>
-                <p>
-                    Allocated Time: <span>29 Hours 20 Minutes</span>
-                </p>
-                <p>
-                    Status: <span>Active Now</span>
-                </p>
-                <p>
-                    Source:{" "}
-                    <a
-                        href="https://youtu.be/x4rFhThSX04"
-                        target="_blank"
-                        title="Go to Youtube"
-                        className="font-bold underline"
-                    >
-                        Free Code Camp
-                    </a>
-                </p>
-            </div>
+            <table className="black-box w-full table-fixed">
+                <tbody>
+                    <tr>
+                        <td>Started:</td>
+                        <td>29 December 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Last Updated:</td>
+                        <td>04 January 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Ongoing:</td>
+                        <td>7 Days</td>
+                    </tr>
+                    <tr>
+                        <td>Allocated Time:</td>
+                        <td>34 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Status:</td>
+                        <td>Active Now</td>
+                    </tr>
+                    <tr>
+                        <td>Source: </td>
+                        <td>
+                            <a
+                                href="https://youtu.be/x4rFhThSX04"
+                                target="_blank"
+                                title="Go to Youtube"
+                                className="font-bold underline"
+                            >
+                                Free Code Camp
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     );
 }

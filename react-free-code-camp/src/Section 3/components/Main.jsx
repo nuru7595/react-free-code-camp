@@ -1,18 +1,16 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ClaudeRecipe from "./ClaudeRecipe";
 import IngredientsList from "./IngredientsList";
 import { getRecipeFromMistral } from "./ai";
 
 export default function Main() {
     const [ingredients, setIngredients] = useState([]);
+
     const handleSubmit = (formData) => {
         const newIngredient = formData.get("ingredient");
         setIngredients((prev) => {
             if (newIngredient !== "") {
-                return [
-                    ...prev,
-                    newIngredient[0].toUpperCase() + newIngredient.slice(1),
-                ];
+                return [...prev, newIngredient];
             } else {
                 return [...prev];
             }
@@ -20,10 +18,18 @@ export default function Main() {
     };
 
     const [recipe, setRecipe] = useState("");
+
     const getRecipe = async () => {
         const recipeMarkdown = await getRecipeFromMistral(ingredients);
         setRecipe(recipeMarkdown);
     };
+
+    const divRef = useRef(null);
+    useEffect(() => {
+        if (recipe !== "" && divRef.current !== null) {
+            divRef.current.scrollIntoView();
+        }
+    }, [recipe]);
 
     return (
         <main className="p-4">
@@ -46,6 +52,7 @@ export default function Main() {
                 <IngredientsList
                     ingredients={ingredients}
                     handleClick={getRecipe}
+                    ref={divRef}
                 />
             ) : null}
             {recipe ? <ClaudeRecipe recipe={recipe} /> : null}

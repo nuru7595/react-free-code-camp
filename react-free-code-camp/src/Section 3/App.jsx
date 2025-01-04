@@ -23,7 +23,7 @@ export default function App() {
             </h3>
             <hr />
             <hr />
-            <h4>Challenge: 1, 4, 5, 18, 25, 34, 35, 36, 37, 38, 39, 53, 54, 56</h4>
+            <h4>Challenge: 1, 4, 5, 18, 25, 34, 35, 36, 37, 38, 39, 53, 54, 56, 16 (Section 4)</h4>
             <Header />
             <Main />
             <hr />

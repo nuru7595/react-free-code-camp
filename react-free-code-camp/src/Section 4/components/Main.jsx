@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Main() {
     const [meme, setMeme] = useState({
@@ -6,16 +6,31 @@ export default function Main() {
         bottomText: "Walk into Mordor",
         imgUrl: "http://i.imgflip.com/1bij.jpg",
     });
+
     const handleChange = (event) => {
-        const {value, name} = event.currentTarget;
+        const { value, name } = event.currentTarget;
         setMeme((prevMeme) => {
             return { ...prevMeme, [name]: value };
         });
     };
 
+    const [allMemes, setAllMemes] = useState([]);
+    useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes").then((res) =>
+            res.json().then((data) => setAllMemes(data.data.memes))
+        );
+    }, []);
+
+    const handleSubmit = () => {
+        let i = Math.floor(Math.random() * allMemes.length);
+        setMeme((prev) => {
+            return { ...prev, imgUrl: allMemes[i].url };
+        });
+    };
+
     return (
         <main className="p-5">
-            <form className="memeForm">
+            <form action={handleSubmit} className="memeForm">
                 <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                         <label htmlFor="topText">Top Text:</label>
@@ -40,7 +55,10 @@ export default function Main() {
                         />
                     </div>
                 </div>
-                <input type="submit" value="Get a new meme image 🖼️" />
+                <input
+                    type="submit"
+                    value="Get a new meme image 🖼️"
+                />
             </form>
             <div className="memeShow">
                 <img src={meme.imgUrl} alt="Meme Image" />
