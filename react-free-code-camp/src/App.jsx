@@ -13,7 +13,7 @@ import EndGame from "./Capstone Project 2/EndGame";
 
 export default function App() {
     // Selector...
-    const [active, setActive] = useState("Sec5");
+    const [active, setActive] = useState("Sec6");
     const myFunc = (x) => {
         setActive(x);
         setLoading(true);

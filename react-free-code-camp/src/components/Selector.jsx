@@ -7,7 +7,7 @@ export default function Selector({ myProps }) {
             <select
                 className="w-full bg-cyan-500 py-3 outline-none cursor-pointer font-bold"
                 onChange={newFunc}
-                defaultValue={"Sec5"}
+                defaultValue={"Sec6"}
             >
                 <option value="Details">Information</option>
                 <option value="Sec1">Section 1: Static Pages</option>
