@@ -1,9 +1,10 @@
 import Game from "./Game";
+import "./Game.css";
 
 export default function EndGame() {
     return (
         <section>
-            <h3 className="title border-b-2 border-black">
+            <h3 className="title">
                 Capstone Project 2: <br /> Assembly: End Game
             </h3>
             <Game />

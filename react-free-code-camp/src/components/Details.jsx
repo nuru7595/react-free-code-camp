@@ -10,15 +10,15 @@ export default function Details() {
                     </tr>
                     <tr>
                         <td>Last Updated:</td>
-                        <td>05 January 2025</td>
+                        <td>06 January 2025</td>
                     </tr>
                     <tr>
                         <td>Ongoing:</td>
-                        <td>8 Days</td>
+                        <td>9 Days</td>
                     </tr>
                     <tr>
                         <td>Allocated Time:</td>
-                        <td>38.5 Hours</td>
+                        <td>39 Hours 40 Minutes</td>
                     </tr>
                     <tr>
                         <td>Status:</td>
