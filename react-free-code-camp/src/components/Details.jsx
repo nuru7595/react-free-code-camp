@@ -10,19 +10,19 @@ export default function Details() {
                     </tr>
                     <tr>
                         <td>Last Updated:</td>
-                        <td>06 January 2025</td>
+                        <td>12 January 2025</td>
                     </tr>
                     <tr>
-                        <td>Ongoing:</td>
-                        <td>9 Days</td>
+                        <td>Completed in:</td>
+                        <td>15 Days</td>
                     </tr>
                     <tr>
                         <td>Allocated Time:</td>
-                        <td>39 Hours 40 Minutes</td>
+                        <td>46.5 Hours</td>
                     </tr>
                     <tr>
                         <td>Status:</td>
-                        <td>Active Now</td>
+                        <td>Completed!</td>
                     </tr>
                     <tr>
                         <td>Source: </td>

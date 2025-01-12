@@ -13,7 +13,8 @@ import EndGame from "./Capstone Project 2/EndGame";
 
 export default function App() {
     // Selector...
-    const [active, setActive] = useState("Sec6");
+    const defaultSelection = "Details";
+    const [active, setActive] = useState(defaultSelection);
     const myFunc = (x) => {
         setActive(x);
         setLoading(true);
@@ -30,7 +31,7 @@ export default function App() {
         <>
             <Header />
             <main className="container">
-                <Selector myProps={myFunc} />
+                <Selector selector={myFunc} default={defaultSelection} />
 
                 {loading ? (
                     <Loader />
