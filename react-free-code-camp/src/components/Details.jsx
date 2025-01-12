@@ -18,7 +18,7 @@ export default function Details() {
                     </tr>
                     <tr>
                         <td>Allocated Time:</td>
-                        <td>46.5 Hours</td>
+                        <td>47 Hours</td>
                     </tr>
                     <tr>
                         <td>Status:</td>
